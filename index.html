@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erick Patiño | Portafolio</title>
+  <link rel="stylesheet" href="./main.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="nav-bar">
+    <div class="menu-logo-container">
+      <div class="logo"></div>
+      <div class="menu-icon">
+        <i class='bx bx-menu bx-md'></i>
+      </div>
+    </div>
+    <ul class="mobile-menu">
+      <li class="list-item">
+        <a href="#home" class="list-link active">
+          <i class='bx bxs-home bg-black bx-md'></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="#about" class="list-link">
+          <i class='bx bxs-user-account bx-md'></i>
+          <span>Sobre mí</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="#milestones" class="list-link">
+          <i class='bx bxs-graduation bx-md'></i>
+          <span>Hitos</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="#portfolio" class="list-link">
+          <i class='bx bxs-briefcase bx-md'></i>
+          <span>Portafolio</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="#skills" class="list-link">
+          <i class='bx bx-code-alt bx-md'></i>
+          <span>Habilidades</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="#contact" class="list-link">
+          <i class='bx bxs-contact bx-md'></i>
+          <span>Contacto</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <button class="close-menu-btn">X</button>
+      </li>
+    </ul>
+    <div class="nav-right">
+      <div class="env-btn">
+        <i class='bx bxs-moon bx-md'></i>
+      </div>
+      <button class="lan-btn">es</button>
+    </div>
+  </nav>
+  <main>
+    <!-- welcome -->
+    <section id="home" class="welcome mi-section">
+      <div class="hero-container">
+        <div class="animation-container">
+          <span id="animated-text" class="animation-text">Hola mundo !</span>
+          <span class="animation-cursor">&#160</span>
+        </div>
+        <div class="hero-info">
+          <h1>Soy <br> Erick Patiño Jaimes</h1>
+          <div class="titles">
+            <span>Ingeniero en Mecatrónica</span>
+            <span>Desarrollador Fullstack</span>
+          </div>
+        </div>
+        <button class="download-btn primary-btn open-button">Ver PDF CV</button>
+        <div class="profile-img-container"></div>
+      </div>
+      <dialog class="modal" id="modal">
+        <div class="pdf-container"></div>
+        <button class="button close-button primary-btn">Cerrar</button>
+      </dialog>
+    </dialog>
+    </section>
+    <!-- about -->
+    <section id="about" class="about mi-section">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-cards-container">
+        <div class="card about-card">
+          <h3 class="card-title">Quien soy?</h3>
+          <p class="about-text">
+            Energético y apasionado egresado de Ingeniería
+            Mecatrónica, autodidacta y entusiasta por aprender.
+            Creatividad y trabajo constante son habilidades que me
+            definen como ingeniero. Entusiasta por usar mi experiencia y tenacidad para
+            crecer en la industria de la tecnologia.
+          </p>
+        </div>
+        <div class="card precepto-card">
+          <h3 class="card-title">Precepto</h3>
+          <p>
+            Dreams without goals are just dreams. <br> And ultimately, they fuel disappointment.
+            On the road to achieving your dreams, you must apply discipline, but more importantly, consistency.
+            Because without commitment, you will never start, but without consistency, you will never finish.
+            <span>
+              --Denzel Washington--
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- milestones -->
+    <section id="milestones" class="milestones mi-section">
+      <h2 class="section-title">Hitos</h2>
+      <div class="timelines-container">
+        <div class="timeline-edu-container">
+          <h3 class="timeline-title">Educación</h3>
+          <div class="timeline-container">
+            <div class="cards-line-container">
+              <span class="timeline-line"></span>
+              <div class="timeline-card-container">
+                <h3 class="education-title">Técnico en Sistemas Digitales</h3>
+                <p class="education-institution">Instituto Politécnico Nacional</p>
+                <span class="date-begining">Agosto<br> 2010</span>
+                <span class="date-finish">Diciembre <br> 2013</span>
+              </div>
+            </div>
+            <div class="card-spacer"></div>
+            <div class="cards-line-container">
+              <span class="timeline-line"></span>
+              <div class="timeline-card-container">
+                <h3 class="education-title">Ingeniero en Mecatrónica</h3>
+                <p class="education-institution">Instituto Politécnico Nacional</p>
+                <span class="date-begining">Agosto <br> 2014</span>
+                <span class="date-finish">Diciembre <br> 2019</span>
+              </div>
+            </div>
+            <div class="card-spacer"></div>
+            <div class="cards-line-container">
+              <span class="timeline-line"></span>
+              <div class="timeline-card-container">
+                <h3 class="education-title">Desarrollador Fullstack</h3>
+                <p class="education-institution">Academlo</p>
+                <span class="date-begining">Septiembre <br> 2023</span>
+                <span class="date-finish">Febrero <br> 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-exp-container">
+          <h3 class="timeline-title">Experiencia Laboral</h3>
+          <div class="timeline-container">
+            <div class="cards-line-container">
+              <span class="timeline-line"></span>
+              <div class="timeline-card-container">
+                <h3 class="education-title">Ingeniero de Integración</h3>
+                <p class="education-institution">Ericcson Telecom</p>
+                <span class="date-begining">Noviembre <br> 2020</span>
+                <span class="date-finish">Abril <br> 2021</span>
+              </div>
+            </div>
+            <div class="card-spacer"></div>
+            <div class="cards-line-container">
+              <span class="timeline-line"></span>
+              <div class="timeline-card-container">
+                <h3 class="education-title">Ingeniero en Mecatrónica</h3>
+                <p class="education-institution">Innovatecsi</p>
+                <span class="date-begining">Agosto <br> 2021</span>
+                <span class="date-finish">Presente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="portfolio" class="projects mi-section">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-img-container project-1"></div>
+          <h2 class="project-title">Cotizador Web de PCB's</h2>
+          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
+            est optio facere, laudantium accusantium sit inventore incidunt</p>
+          <button class="see-more-button primary-btn">Ver más</button>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container project-2"></div>
+          <h2 class="project-title">E-commerce figuras coleccionables</h2>
+          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
+            est optio facere, laudantium accusantium sit inventore incidunt</p>
+          <button class="see-more-button primary-btn">Ver más</button>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container project-3"></div>
+          <h2 class="project-title">Dashboard para dispositivos IoT</h2>
+          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
+            est optio facere, laudantium accusantium sit inventore incidunt</p>
+          <button class="see-more-button primary-btn">Ver más</button>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container project-4"></div>
+          <h2 class="project-title">Diseño, implementación y programación de sistema Wifi portatil para aplicaciones IoT
+          </h2>
+          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
+            est optio facere, laudantium accusantium sit inventore incidunt</p>
+          <button class="see-more-button primary-btn">Ver más</button>
+        </div>
+      </div>
+    </section>
+    <!-- skillset -->
+    <section id="skills" class="skillset mi-section">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skillset-container">
+        <div class="skill-container">
+          <figure class="html-icon"></figure>
+          <span>HTML 5</span>
+        </div>
+        <div class="skill-container">
+          <figure class="css-icon"></figure>
+          <span>CSS 3</span>
+        </div>
+        <div class="skill-container">
+          <figure class="js-icon"></figure>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-container">
+          <figure class="git-icon"></figure>
+          <span>Git</span>
+        </div>
+        <div class="skill-container">
+          <figure class="git-hub-icon"></figure>
+          <span>Git-hub</span>
+        </div>
+        <div class="skill-container">
+          <figure class="python-icon"></figure>
+          <span>Python</span>
+        </div>
+        <div class="skill-container">
+          <figure class="windows-icon"></figure>
+          <span>Windows</span>
+        </div>
+        <div class="skill-container">
+          <figure class="c-icon"></figure>
+          <span>C++</span>
+        </div>
+      </div>
+    </section>
+    <!-- contact me -->
+    <section id="contact" class="contact-me mi-section">
+      <h2 class="section-title">Contacto</h2>
+      <div class="form-container">
+        <form id="form" class="contact-form">
+          <div class="label-input">
+            <label for="name"><i class='bx bxs-user'></i></label>
+            <input type="text" id="name" placeholder="Nombre" name="name">
+          </div>
+          <div class="label-input">
+            <label for="email"><i class='bx bx-at'></i></label>
+            <input type="email" id="email" placeholder="Correo" name="email">
+          </div>
+          <div>
+            <label for="message" class="msg-label">Mensaje</label> <br>
+            <textarea name="message" id="message" rows="10"></textarea>
+          </div>
+          <button class="contact-btn primary-btn" type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="social-media-container">
+        <a href="">
+          <figure class="linkedin-icon"></figure>
+        </a>
+        <a href="">
+          <figure class="git-hub-icon"></figure>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <small>© 2023 Hecho con ♥ por Erick Patiño <br> All rights reserved.</small>
+  </footer>
+</body>
+
+</html>
