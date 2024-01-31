@@ -1,6 +1,7 @@
 :root {
   --cursor-color: #eee;
   --duration: 3s;
+  /* --dim-gray: #6D7275; */
   --oxford-blue: #00244d;
   --state-gray: #627c85;
   --air-superiority-blue: #779cab;
@@ -11,16 +12,14 @@
   --fondo-bg: hsl(36, 100%, 98%);
   --fondo-cards: white;
   --fondo-trans: hsl(36 100% 98% / 0.85);
-  --fondo-logo: #00244d;
 }
 
 .dark-mode{
   --fondo-aux: hsl(36, 100%, 98%);
   --fondo-aux-comp: #00244d;
   --fondo-bg: #ADBDC2;
-  --fondo-cards: hsl(36, 100%, 98%);
+  --fondo-cards: #6D7275;
   --fondo-trans: hsl(212 100% 15% / 0.85);
-  --fondo-logo: transparent;
 }
 
 html {
@@ -142,7 +141,7 @@ main {
 }
 
 .logo {
-  background-color: var(--fondo-logo);
+  background-color: #00244d;
   background-image: url(./assets/img/devPathNasaLogo.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -215,7 +214,8 @@ main {
   display: none;
   height: 250px;
   width: 250px;
-  background-image: url(./assets/img/perfil.jpg);
+  background-color: #00244d;
+  background-image: url(./assets/img/devPathNasaLogo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -277,6 +277,7 @@ main {
   }
 }
 
+
 .welcome h1 {
   font-size: xx-large;
   margin: 0;
@@ -284,19 +285,24 @@ main {
   text-align: center;
 }
 
+.hero-info > span{
+  font-size: large;
+}
+
 .titles {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 15px;
+  margin-top: 25px;
 }
 
 .titles span {
+  font-size: large;
   background-color: var(--nyanza);
   color: black;
-  padding: 6px 8px;
+  padding: 14px 18px;
   font-weight: 500;
 }
 
@@ -318,6 +324,28 @@ main {
   gap: 40px;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.about .title-container{
+  display: flex;
+  align-items: center;
+}
+
+.title-container .section-title{
+  margin-left: 0;
+  margin-right: 40px;
+  width: auto;
+  display: inline;
+}
+
+.about-img-container{
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  background-image: url(./assets/img/perfil.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .about-cards-container{
@@ -822,7 +850,7 @@ footer > small {
   }
 
   .profile-img-container{
-    justify-self: center;
+    justify-self: start;
     display: inline-block;
     grid-area: imagen;
   }
@@ -836,15 +864,15 @@ footer > small {
 
   .hero-info{
     grid-area: info;
-    justify-self: center;
+    justify-self: end;
   }
 
   .hero-info h1{
     font-size: xx-large;
   }
 
-  .hero-info span{
-    font-size: large;
+  .titles span{
+    font-size: x-large;
   }
 
   .download-btn{
