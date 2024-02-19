@@ -154,7 +154,7 @@ main {
 .nav-right {
   display: flex;
   flex-direction: row;
-  margin-right: 20px;
+  margin-right: 40px;
   gap: 20px;
 }
 
@@ -735,7 +735,7 @@ footer > small {
 /* Utils */
 
 .mi-section {
-  padding: 60px 30px;
+  padding: 80px 30px;
 }
 
 .section-title {

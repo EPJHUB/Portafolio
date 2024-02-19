@@ -9,7 +9,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
-  <script src="main.js" defer></script>
+  <script type="module" src="main.js" defer></script>
 </head>
 
 <body>
@@ -25,37 +25,37 @@
       <li class="list-item">
         <a href="#home" class="list-link active">
           <i class='bx bxs-home bg-black bx-md'></i>
-          <span>Home</span>
+          <span id="lan-nav1">Inicio</span>
         </a>
       </li>
       <li class="list-item">
         <a href="#about" class="list-link">
           <i class='bx bxs-user-account bx-md'></i>
-          <span>Sobre mí</span>
+          <span id="lan-nav2">Sobre mí</span>
         </a>
       </li>
       <li class="list-item">
         <a href="#milestones" class="list-link">
           <i class='bx bxs-graduation bx-md'></i>
-          <span>Hitos</span>
+          <span id="lan-nav3">Hitos</span>
         </a>
       </li>
       <li class="list-item">
         <a href="#portfolio" class="list-link">
           <i class='bx bxs-briefcase bx-md'></i>
-          <span>Portafolio</span>
+          <span id="lan-nav4">Proyectos</span>
         </a>
       </li>
       <li class="list-item">
         <a href="#skills" class="list-link">
           <i class='bx bx-code-alt bx-md'></i>
-          <span>Habilidades</span>
+          <span id="lan-nav5">Habilidades</span>
         </a>
       </li>
       <li class="list-item">
         <a href="#contact" class="list-link">
           <i class='bx bxs-contact bx-md'></i>
-          <span>Contacto</span>
+          <span id="lan-nav6">Contacto</span>
         </a>
       </li>
       <li class="list-item">
@@ -66,7 +66,7 @@
       <div class="env-btn">
         <i class='bx bxs-moon bx-md'></i>
       </div>
-      <button class="lan-btn">es</button>
+      <button class="lan-btn">en</button>
     </div>
   </nav>
   <main>
@@ -78,11 +78,11 @@
           <span class="animation-cursor">&#160</span>
         </div>
         <div class="hero-info">
-          <span>Hey!!! yo soy</span>
+          <span id="lan-hero-phrase">Hey!!! yo soy</span>
           <h1>Erick Patiño Jaimes</h1>
           <div class="titles">
-            <span>Ingeniero en Mecatrónica</span>
-            <span>Desarrollador Fullstack</span>
+            <span id="lan-hero-profession-1">Ingeniero en Mecatrónica</span>
+            <span id="lan-hero-profession-2">Desarrollador Fullstack</span>
           </div>
         </div>
         <button class="download-btn primary-btn open-button">Ver PDF CV</button>
@@ -97,13 +97,13 @@
     <!-- about -->
     <section id="about" class="about mi-section">
       <div class="title-container">
-        <h2 class="section-title">Sobre mí</h2>
+        <h2 id="lan-about-section-title" class="section-title">Sobre mí</h2>
         <span class="about-img-container"></span>
       </div>
       <div class="about-cards-container">
         <div class="card about-card">
-          <h3 class="card-title">Quien soy?</h3>
-          <p class="about-text">
+          <h3 id="lan-about-card-title1" class="card-title">Quien soy?</h3>
+          <p id="lan-about-card-text1" class="about-text">
             Energético y apasionado egresado de Ingeniería
             Mecatrónica, autodidacta y entusiasta por aprender.
             Creatividad y trabajo constante son habilidades que me
@@ -112,63 +112,63 @@
           </p>
         </div>
         <div class="card precepto-card">
-          <h3 class="card-title">Precepto</h3>
-          <p>
+          <h3 id="lan-about-card-title2" class="card-title">Precepto</h3>
+          <p id="lan-about-card-text2">
             Dreams without goals are just dreams. <br> And ultimately, they fuel disappointment.
             On the road to achieving your dreams, you must apply discipline, but more importantly, consistency.
             Because without commitment, you will never start, but without consistency, you will never finish.
-            <span>
-              --Denzel Washington--
-            </span>
           </p>
+          <span>
+            --Denzel Washington--
+          </span>
         </div>
       </div>
     </section>
     <!-- milestones -->
     <section id="milestones" class="milestones mi-section">
-      <h2 class="section-title">Hitos</h2>
+      <h2 id="lan-ms-section-title" class="section-title">Hitos</h2>
       <div class="timelines-container">
         <div class="timeline-edu-container">
-          <h3 class="timeline-title">Educación</h3>
+          <h3 id="lan-ms-timeline1-title" class="timeline-title">Educación</h3>
           <div class="timeline-container">
             <div class="cards-line-container">
               <span class="timeline-line"></span>
               <div class="timeline-card-container">
-                <h3 class="education-title">Técnico en Sistemas Digitales</h3>
+                <h3 id="lan-ms-degree1" class="education-title">Técnico en Sistemas Digitales</h3>
                 <p class="education-institution">Instituto Politécnico Nacional</p>
-                <span class="date-begining">Agosto<br> 2010</span>
-                <span class="date-finish">Diciembre <br> 2013</span>
+                <span id="lan-ms-degree1-init" class="date-begining">Agosto<br> 2010</span>
+                <span id="lan-ms-degree1-end" class="date-finish">Diciembre <br> 2013</span>
               </div>
             </div>
             <div class="card-spacer"></div>
             <div class="cards-line-container">
               <span class="timeline-line"></span>
               <div class="timeline-card-container">
-                <h3 class="education-title">Ingeniero en Mecatrónica</h3>
+                <h3 id="lan-ms-degree2" class="education-title">Ingeniero en Mecatrónica</h3>
                 <p class="education-institution">Instituto Politécnico Nacional</p>
-                <span class="date-begining">Agosto <br> 2014</span>
-                <span class="date-finish">Diciembre <br> 2019</span>
+                <span id="lan-ms-degree2-init" class="date-begining">Agosto <br> 2014</span>
+                <span id="lan-ms-degree2-end" class="date-finish">Diciembre <br> 2019</span>
               </div>
             </div>
             <div class="card-spacer"></div>
             <div class="cards-line-container">
               <span class="timeline-line"></span>
               <div class="timeline-card-container">
-                <h3 class="education-title">Desarrollador Fullstack</h3>
+                <h3 id="lan-ms-degree3" class="education-title">Desarrollador Fullstack</h3>
                 <p class="education-institution">Academlo</p>
-                <span class="date-begining">Septiembre <br> 2023</span>
-                <span class="date-finish">Febrero <br> 2024</span>
+                <span id="lan-ms-degree3-init" class="date-begining">Septiembre <br> 2023</span>
+                <span id="lan-ms-degree3-end" class="date-finish">Febrero <br> 2024</span>
               </div>
             </div>
           </div>
         </div>
         <div class="timeline-exp-container">
-          <h3 class="timeline-title">Experiencia Laboral</h3>
+          <h3 id="lan-ms-timeline2-title" class="timeline-title">Experiencia Laboral</h3>
           <div class="timeline-container">
             <div class="cards-line-container">
               <span class="timeline-line"></span>
               <div class="timeline-card-container">
-                <h3 class="education-title">Ingeniero de Integración</h3>
+                <h3 id="lan-ms-job1" class="education-title">Ingeniero de Integración</h3>
                 <p class="education-institution">Ericcson Telecom</p>
                 <span class="date-begining">Noviembre <br> 2020</span>
                 <span class="date-finish">Abril <br> 2021</span>
@@ -178,7 +178,7 @@
             <div class="cards-line-container">
               <span class="timeline-line"></span>
               <div class="timeline-card-container">
-                <h3 class="education-title">Ingeniero en Mecatrónica</h3>
+                <h3 id="lan-ms-job2" class="education-title">Ingeniero en Mecatrónica</h3>
                 <p class="education-institution">Innovatecsi</p>
                 <span class="date-begining">Agosto <br> 2021</span>
                 <span class="date-finish">Presente</span>
@@ -293,7 +293,7 @@
   </main>
   <!-- footer -->
   <footer>
-    <small>© 2023 Hecho con ♥ por Erick Patiño <br> All rights reserved.</small>
+    <small>© 2023 Hecho con ♥ por Erick Patiño <br> Todos los derechos reservados</small>
   </footer>
 </body>
 

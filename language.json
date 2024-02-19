@@ -1,0 +1,57 @@
+ {
+    "es":
+    {
+        "nav":
+        {
+            "1": "Inicio",
+            "2": "Sobre mí",
+            "3": "Hitos",
+            "4": "Proyectos",
+            "5": "Habilidades",
+            "6": "Contacto"
+        },
+        "hero":
+        {
+            "phrase": "Hey!!! yo soy",
+            "profession1": "Ingeniero en Mecatrónica",
+            "profession2": "Desarrollador Fullstack"
+        },
+        "about":
+        {
+            "secctionTitle": "Sobre mí",
+            "cardTitle1": "¿Quien soy?",
+            "cardText1": "Energético y apasionado egresado de Ingeniería Mecatrónica, autodidacta y entusiasta por aprender. Creatividad y trabajo constante son habilidades que me definen como ingeniero. Entusiasta por usar mi experiencia y tenacidad para crecer en la industria de la tecnologia",
+            "cardTitle2": "Frase de vida",
+            "cardText2": "Los sueños sin metas son sólo sueños y en última instancia, alimentan la decepción. En el camino hacia el logro de tus sueños debes aplicar disciplina, pero más importante aún, constancia. Porque sin compromiso nunca empezarás, pero sin constancia nunca terminarás"
+        }
+
+        
+    },
+    "en":
+    {
+        "nav":
+        {
+            "1": "Home",
+            "2": "About me",
+            "3": "Milestones",
+            "4": "Projects",
+            "5": "Skills",
+            "6": "Contact me"
+        },
+        "hero":
+        {
+            "phrase": "Hey!!! I am",
+            "profession1": "Mechatronics Engineer",
+            "profession2": "Fullstack Web Developer"
+        },
+        "about":
+        {
+            "secctionTitle": "About me",
+            "cardTitle1": "¿Who am I?",
+            "cardText1": "Energetic and passionate college graduate with B.S. in Mechatronics Engineering, self-taught and enthusiastic for learning. Creativity and hardworking are skills that defines me as engineer. Excited about using my expertise and tenacity to grow in the industry.",
+            "cardTitle2": "Motto",
+            "cardText2": "Dreams without goals are just dreams.And ultimately, they fuel disappointment. On the road to achieving your dreams, you must apply discipline, but more importantly, consistency. Because without commitment, you will never start, but without consistency, you will never finish."
+        }
+
+    }
+}
