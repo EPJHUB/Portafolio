@@ -18,8 +18,35 @@ const aboutCardTitle2 = document.getElementById('lan-about-card-title2');
 const aboutCardText2 = document.getElementById('lan-about-card-text2');
 //milestones-secction
 const msSecctionTitle = document.getElementById('lan-ms-section-title');
-const msTlTitle1 = document.getElementById('lan-ms-tl-title1')
-const msTlTitle2 = document.getElementById('lan-ms-tl-title2')
+const msTimeline1Title = document.getElementById('lan-ms-timeline1-title');
+const msDegree1 = document.getElementById('lan-ms-degree1')
+const msDegree1Init = document.getElementById('lan-ms-degree1-init')
+const msDegree1End = document.getElementById('lan-ms-degree1-end')
+const msDegree2 = document.getElementById('lan-ms-degree2')
+const msDegree2Init = document.getElementById('lan-ms-degree2-init')
+const msDegree2End = document.getElementById('lan-ms-degree2-end')
+const msDegree3 = document.getElementById('lan-ms-degree3')
+const msDegree3Init = document.getElementById('lan-ms-degree3-init')
+const msDegree3End = document.getElementById('lan-ms-degree3-end')
+
+const msTimeline2Title = document.getElementById('lan-ms-timeline2-title');
+const msJob1 = document.getElementById('lan-ms-job1')
+const msJob1Init = document.getElementById('lan-ms-job1-init')
+const msJob1End = document.getElementById('lan-ms-job1-end')
+const msJob2 = document.getElementById('lan-ms-job2')
+const msJob2Init = document.getElementById('lan-ms-job2-init')
+const msJob2End = document.getElementById('lan-ms-job2-end')
+
+const projectSecctionTitle = document.getElementById('lan-project-section-title');
+
+const skillSecctionTitle = document.getElementById('lan-skill-section-title');
+
+const contactSecctionTitle = document.getElementById('lan-contact-section-title');
+const contactName = document.getElementById('name');
+const contactEmail = document.getElementById('email');
+const contactMessage = document.getElementById('message-label');
+const contactSubmitBtn = document.getElementById('contact-submit-btn');
+
 
 
 
@@ -44,6 +71,37 @@ const setLanguage = (lan) => {
     aboutCardText1.innerText = language[lan].about.cardText1;
     aboutCardTitle2.innerText = language[lan].about.cardTitle2;
     aboutCardText2.innerText = language[lan].about.cardText2;
+    //milestones
+    msSecctionTitle.innerText = language[lan].milestones.secctionTitle;
+    msTimeline1Title.innerText = language[lan].milestones.timelineTitle1;
+    msDegree1.innerText = language[lan].milestones.degree1;
+    msDegree1Init.innerHTML = language[lan].milestones.degree1init;
+    msDegree1End.innerHTML = language[lan].milestones.degree1end;
+    msDegree2.innerText = language[lan].milestones.degree2;
+    msDegree2Init.innerHTML = language[lan].milestones.degree2init;
+    msDegree2End.innerHTML = language[lan].milestones.degree2end;
+    msDegree3.innerText = language[lan].milestones.degree3;
+    msDegree3Init.innerHTML = language[lan].milestones.degree3init;
+    msDegree3End.innerHTML = language[lan].milestones.degree3end;
+    msTimeline2Title.innerText = language[lan].milestones.timelineTitle2;
+    msJob1.innerText = language[lan].milestones.job1;
+    msJob1Init.innerHTML = language[lan].milestones.job1init;
+    msJob1End.innerHTML = language[lan].milestones.job1end;
+    msJob2.innerText = language[lan].milestones.job2;
+    msJob2Init.innerHTML = language[lan].milestones.job2init;
+    msJob2End.innerHTML = language[lan].milestones.job2end;
+    //projects
+    projectSecctionTitle.innerText = language[lan].projects.secctionTitle;
+    //skills
+    skillSecctionTitle.innerText = language[lan].skills.secctionTitle;
+    //contact
+    contactSecctionTitle.innerText = language[lan].contact.secctionTitle;
+    contactName.setAttribute("placeholder",language[lan].contact.contactName);
+    contactEmail.setAttribute("placeholder",language[lan].contact.contactEmail);
+    contactMessage.innerText = language[lan].contact.messageLabel;
+    // console.dir(contactMessage)
+    contactSubmitBtn.innerText = language[lan].contact.submitBtn;
+    // console.log(contactName)
 }
 
 export { setLanguage };

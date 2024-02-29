@@ -23,7 +23,45 @@
             "cardText1": "Energético y apasionado egresado de Ingeniería Mecatrónica, autodidacta y entusiasta por aprender. Creatividad y trabajo constante son habilidades que me definen como ingeniero. Entusiasta por usar mi experiencia y tenacidad para crecer en la industria de la tecnologia",
             "cardTitle2": "Frase de vida",
             "cardText2": "Los sueños sin metas son sólo sueños y en última instancia, alimentan la decepción. En el camino hacia el logro de tus sueños debes aplicar disciplina, pero más importante aún, constancia. Porque sin compromiso nunca empezarás, pero sin constancia nunca terminarás"
+        },
+        "milestones":
+        {
+            "secctionTitle": "Hitos",
+            "timelineTitle1": "Educación",
+            "degree1": "Técnico en Sistemas Digitales",
+            "degree1init": "Agosto<br> 2010",
+            "degree1end": "Diciembre<br> 2013",
+            "degree2": "Ingeniero en Mecatrónica",
+            "degree2init": "Agosto<br> 2014",
+            "degree2end": "Diciembre<br> 2019",
+            "degree3": "Desarrollador Fullstack",
+            "degree3init": "Septiembre<br> 2023",
+            "degree3end": "Marzo<br> 2024",
+            "timelineTitle2": "Experiencia Laboral",
+            "job1": "Ingeniero de Integración",
+            "job1init": "Noviembre<br> 2020",
+            "job1end": "Abril<br> 2021",
+            "job2": "Ingeniero en Mecatrónica",
+            "job2init": "Agosto<br> 2021",
+            "job2end": "Presente"
+        },
+        "projects":
+        {
+            "secctionTitle": "Proyectos"
+        },
+        "skills":
+        {
+            "secctionTitle": "Habilidades"
+        },
+        "contact":
+        {
+            "secctionTitle": "Contacto",
+            "contactName": "Nombre",
+            "contactEmail": "Correo",
+            "messageLabel": "Mensaje",
+            "submitBtn": "Enviar"
         }
+        
 
         
     },
@@ -51,6 +89,43 @@
             "cardText1": "Energetic and passionate college graduate with B.S. in Mechatronics Engineering, self-taught and enthusiastic for learning. Creativity and hardworking are skills that defines me as engineer. Excited about using my expertise and tenacity to grow in the industry.",
             "cardTitle2": "Motto",
             "cardText2": "Dreams without goals are just dreams.And ultimately, they fuel disappointment. On the road to achieving your dreams, you must apply discipline, but more importantly, consistency. Because without commitment, you will never start, but without consistency, you will never finish."
+        },
+        "milestones":
+        {
+            "secctionTitle": "Milestones",
+            "timelineTitle1": "Education",
+            "degree1": "Digital Systems Technician",
+            "degree1init": "August<br> 2010",
+            "degree1end": "Dicember<br> 2013",
+            "degree2": "Mechatronics Engineer",
+            "degree2init": "August<br> 2014",
+            "degree2end": "Dicember<br> 2019",
+            "degree3": "Fullstack Developer",
+            "degree3init": "September<br> 2023",
+            "degree3end": "March<br> 2024",
+            "timelineTitle2": "Work Experience",
+            "job1": "Integration Engineer",
+            "job1init": "November<br> 2020",
+            "job1end": "April<br> 2021",
+            "job2": "Mechatronics Engineer",
+            "job2init": "August<br> 2021",
+            "job2end": "Current"
+        },
+        "projects":
+        {
+            "secctionTitle": "Projects"
+        },
+        "skills":
+        {
+            "secctionTitle": "Skills"
+        },
+        "contact":
+        {
+            "secctionTitle": "Contact me",
+            "contactName": "Name",
+            "contactEmail": "Email",
+            "messageLabel": "Message",
+            "submitBtn": "Submit"
         }
 
     }
