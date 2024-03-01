@@ -1,10 +1,17 @@
-// const { setLanguage } = require("./languageHandler");
-import { setLanguage } from "./languageHandler.js";
-const welcomeTextArray = [
-  { text: "Hola mundo!!!", len: 12 },
-  { text: "Hola desarrollador", len: 16 },
-  { text: "Hola internauta", len: 13 },
-];
+import { setLanguage, setWelcomeText } from "./languageHandler.js";
+const currentLanguage = localStorage.getItem("epj-portfolio-lan");
+if (!currentLanguage){
+  setLanguage("es");
+}
+else{
+  setLanguage(currentLanguage);
+}
+// const welcomeTextArray = [
+//   { text: "Hola mundo!!!", len: 12 },
+//   { text: "Hola desarrollador", len: 16 },
+//   { text: "Hola internauta", len: 13 },
+// ];
+let welcomeTextArray = setWelcomeText(currentLanguage)
 const r = document.querySelector(":root");
 let i = 0;
 let inicio = false;
@@ -75,15 +82,9 @@ navBar.addEventListener("click", function (e) {
     navBarMenu.classList.toggle("slide-right");
   }
   if (e.target.closest(".lan-btn")) {
-    // console.log('lan-btn clicked')
     const lanBtn = document.querySelector(".lan-btn");
-    // console.log(lanBtn.innerText);
+    welcomeTextArray = setWelcomeText(lanBtn.innerText);
     setLanguage(lanBtn.innerText);
-    if (lanBtn.innerText == "es") {
-      lanBtn.innerText = "en";
-    } else if (lanBtn.innerText == "en") {
-      lanBtn.innerText = "es";
-    }
   }
 });
 
@@ -92,18 +93,6 @@ document.addEventListener("keydown", function (e) {
     navBarMenu.classList.remove("show--menu");
   }
 });
-
-// const lanBtn = document.querySelector(".lan-btn");
-// lanBtn.addEventListener("onClick", () => {
-//   const language = lanBtn.innerText;
-//   setLanguage(language);
-//   if (language == "es") {
-//     lanBtn.innerText = 'en';
-//   }
-//   else if (language == 'en'){
-//     lanBtn.innerText = 'es'
-//   }
-// });
 
 const SR = ScrollReveal();
 

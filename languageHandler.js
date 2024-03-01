@@ -6,10 +6,12 @@ const nav3 = document.getElementById('lan-nav3');
 const nav4 = document.getElementById('lan-nav4');
 const nav5 = document.getElementById('lan-nav5');
 const nav6 = document.getElementById('lan-nav6');
+const lanBtn = document.getElementById('lan-btn');
 //hero
 const heroPhrase = document.getElementById('lan-hero-phrase');
 const heroProfession1 = document.getElementById('lan-hero-profession-1');
 const heroProfession2 = document.getElementById('lan-hero-profession-2');
+const downloadCvBtn = document.getElementById('download-cv-btn');
 //about-secction
 const aboutSecctionTitle = document.getElementById('lan-about-section-title');
 const aboutCardTitle1 = document.getElementById('lan-about-card-title1');
@@ -36,20 +38,26 @@ const msJob1End = document.getElementById('lan-ms-job1-end')
 const msJob2 = document.getElementById('lan-ms-job2')
 const msJob2Init = document.getElementById('lan-ms-job2-init')
 const msJob2End = document.getElementById('lan-ms-job2-end')
-
+//project
 const projectSecctionTitle = document.getElementById('lan-project-section-title');
-
+//skills
 const skillSecctionTitle = document.getElementById('lan-skill-section-title');
-
+//contact
 const contactSecctionTitle = document.getElementById('lan-contact-section-title');
 const contactName = document.getElementById('name');
 const contactEmail = document.getElementById('email');
 const contactMessage = document.getElementById('message-label');
 const contactSubmitBtn = document.getElementById('contact-submit-btn');
+//footer
+const footerText = document.getElementById('lan-footer');
 
 
 
 
+const setWelcomeText = (lan)  => {
+    const welcomeText = language[lan].welcomeText;
+    return welcomeText;
+}
 
 
 
@@ -61,10 +69,14 @@ const setLanguage = (lan) => {
     nav4.innerText = language[lan].nav[4];
     nav5.innerText = language[lan].nav[5];
     nav6.innerText = language[lan].nav[6];
+    //
+    localStorage.setItem("epj-portfolio-lan",lanBtn.innerText);
+    lanBtn.innerText = language[lan].nav.lan;
     //hero
     heroPhrase.innerText = language[lan].hero.phrase;
     heroProfession1.innerText = language[lan].hero.profession1;
     heroProfession2.innerText = language[lan].hero.profession2;
+    downloadCvBtn.innerText = language[lan].hero.downloadBtn;
 
     aboutSecctionTitle.innerText = language[lan].about.secctionTitle;
     aboutCardTitle1.innerText = language[lan].about.cardTitle1;
@@ -99,9 +111,9 @@ const setLanguage = (lan) => {
     contactName.setAttribute("placeholder",language[lan].contact.contactName);
     contactEmail.setAttribute("placeholder",language[lan].contact.contactEmail);
     contactMessage.innerText = language[lan].contact.messageLabel;
-    // console.dir(contactMessage)
     contactSubmitBtn.innerText = language[lan].contact.submitBtn;
-    // console.log(contactName)
+    //footer
+    footerText.innerHTML = language[lan].footer.text;
 }
 
-export { setLanguage };
+export { setLanguage, setWelcomeText };

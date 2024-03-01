@@ -66,7 +66,7 @@
       <div class="env-btn">
         <i class='bx bxs-moon bx-md'></i>
       </div>
-      <button class="lan-btn">en</button>
+      <button id="lan-btn" class="lan-btn">en</button>
     </div>
   </nav>
   <main>
@@ -85,14 +85,21 @@
             <span id="lan-hero-profession-2">Desarrollador Fullstack</span>
           </div>
         </div>
-        <button class="download-btn primary-btn open-button">Ver PDF CV</button>
+        <button id="download-cv-btn" class="download-btn primary-btn open-button">Descargar CV</button>
         <div class="profile-img-container"></div>
       </div>
       <dialog class="modal" id="modal">
-        <div class="pdf-container"></div>
+        <div class="pdfs-container">
+          <div class="pdf-cv-ats-container">
+            <a href="assets/pdf/CV_ATS_Español_ErickPatiño.pdf" download="CV_ATS_Español_ErickPatiño.pdf"></a>
+          </div>
+          <div class="pdf-cv-container">
+            <a href="assets/pdf/CV_Español_ErickPatiño.pdf" download="CV_Español_ErickPatiño.pdf"></a>
+          </div>
+        </div>
         <button class="button close-button primary-btn">Cerrar</button>
       </dialog>
-    </dialog>
+      </dialog>
     </section>
     <!-- about -->
     <section id="about" class="about mi-section">
@@ -256,8 +263,32 @@
           <span>Windows</span>
         </div>
         <div class="skill-container">
-          <figure class="c-icon"></figure>
-          <span>C++</span>
+          <figure class="express-icon"></figure>
+          <span>Express</span>
+        </div>
+        <div class="skill-container">
+          <figure class="node-icon"></figure>
+          <span>Node</span>
+        </div>
+        <div class="skill-container">
+          <figure class="postgres-icon"></figure>
+          <span>Postgres</span>
+        </div>
+        <div class="skill-container">
+          <figure class="postman-icon"></figure>
+          <span>Postman</span>
+        </div>
+        <div class="skill-container">
+          <figure class="react-icon"></figure>
+          <span>React</span>
+        </div>
+        <div class="skill-container">
+          <figure class="tailwind-icon"></figure>
+          <span>Tailwind</span>
+        </div>
+        <div class="skill-container">
+          <figure class="vite-icon"></figure>
+          <span>Vite</span>
         </div>
       </div>
     </section>
@@ -282,10 +313,10 @@
         </form>
       </div>
       <div class="social-media-container">
-        <a href="">
+        <a href="https://www.linkedin.com/in/erick-patiño-ba7a8216a/">
           <figure class="linkedin-icon"></figure>
         </a>
-        <a href="">
+        <a href="https://github.com/EPJHUB">
           <figure class="git-hub-icon"></figure>
         </a>
       </div>
@@ -293,7 +324,7 @@
   </main>
   <!-- footer -->
   <footer>
-    <small>© 2023 Hecho con ♥ por Erick Patiño <br> Todos los derechos reservados</small>
+    <small id="lan-footer">© 2023 Hecho con ♥ por Erick Patiño <br> Todos los derechos reservados</small>
   </footer>
 </body>
 

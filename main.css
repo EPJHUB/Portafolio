@@ -632,8 +632,32 @@ main {
   background-image: url(./assets/icons/windows.svg);
 }
 
-.c-icon {
-  background-image: url(./assets/icons/c++.svg);
+.express-icon {
+  background-image: url(./assets/icons/express.svg);
+}
+
+.node-icon {
+  background-image: url(./assets/icons/nodejs.svg);
+}
+
+.postgres-icon {
+  background-image: url(./assets/icons/postgres.svg);
+}
+
+.postman-icon {
+  background-image: url(./assets/icons/postman.svg);
+}
+
+.react-icon {
+  background-image: url(./assets/icons/react.svg);
+}
+
+.tailwind-icon {
+  background-image: url(./assets/icons/tailwind.svg);
+}
+
+.vite-icon {
+  background-image: url(./assets/icons/vite.svg);
 }
 
 .linkedin-icon {
@@ -768,16 +792,38 @@ footer > small {
   display: none;
 }
 
-.pdf-container{
+.pdfs-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 90%;
-  background-image: url(./assets/img/cv.svg);
+  height: 100%;
+}
+
+.pdf-cv-ats-container{
+  width: 45%;
+  height: 100%;
+  background-image: url(./assets/img/CV_ATS_Español_ErickPatiño.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pdf-cv-container{
+  width: 45%;
+  height: 100%;
+  background-image: url(./assets/img/CV_Español_ErickPatiño.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .close-button{
+  position: absolute;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  left: 50%;
   margin: 10px auto;
   padding: 0px;
   width: 100px;
