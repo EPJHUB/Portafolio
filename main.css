@@ -12,6 +12,7 @@
   --fondo-bg: hsl(36, 100%, 98%);
   --fondo-cards: white;
   --fondo-trans: hsl(36 100% 98% / 0.85);
+  --swiper-pagination-color: var(--penn-red);
 }
 
 .dark-mode {
@@ -487,11 +488,12 @@ main {
   flex-direction: column;
   gap: 40px;
   background-color: var(--fondo-bg);
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .projects-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -502,6 +504,8 @@ main {
   box-shadow: 0 0 40px 2px rgba(29, 30, 32, 0.1);
   border-radius: 3px 3px 30px 3px;
   padding: 20px 20px;
+  margin: 0px 50px 50px 50px;
+  text-align: left;
 }
 
 .project-img-container {
@@ -966,4 +970,36 @@ footer > small {
     grid-area: btn;
     justify-self: center;
   }
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--fondo-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  color: var(--oxford-blue);
 }
