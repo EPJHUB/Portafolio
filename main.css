@@ -663,6 +663,10 @@ main {
   background-image: url(./assets/icons/linkedin.svg);
 }
 
+.whatsapp-icon {
+  background-image: url(./assets/icons/whatsapp.svg);
+}
+
 /* contact me */
 
 .contact-me {
@@ -763,9 +767,9 @@ textarea {
   align-items: center;
   background-color: white;
   box-shadow: 0 0 40px 2px rgba(29, 30, 32, 0.1);
-  border-radius: 30px;
-  width: 150px;
-  height: 60px;
+  border-radius: 37.5px;
+  width: 225px;
+  height: 75px;
 }
 
 .social-media-container > a > figure {
