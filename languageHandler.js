@@ -48,6 +48,15 @@ const aboutCardText2 = document.getElementById('lan-about-card-text2');
 // const msJob2End = document.getElementById('lan-ms-job2-end')
 //project
 const projectSecctionTitle = document.getElementById('lan-project-section-title');
+const seeMoreBtns = document.getElementsByClassName('see-more-button');
+// console.log(typeof seeMoreBtns)
+const p1Title = document.getElementById('p1-title');
+const p2Title = document.getElementById('p2-title');
+const p3Title = document.getElementById('p3-title');
+const p1Description = document.getElementById('p1-description');
+const p2Description = document.getElementById('p2-description');
+const p3Description = document.getElementById('p3-description');
+
 //skills
 const skillSecctionTitle = document.getElementById('lan-skill-section-title');
 //contact
@@ -118,6 +127,15 @@ const setLanguage = (lan) => {
     // msJob2End.innerHTML = language[lan].milestones.job2end;
     //projects
     projectSecctionTitle.innerText = language[lan].projects.secctionTitle;
+    Object.values(seeMoreBtns).forEach(btn => {
+        btn.innerText=language[lan].projects.moreBtn;
+    })
+    p1Title.innerText=language[lan].projects.p1Title;
+    p2Title.innerText=language[lan].projects.p2Title;
+    p3Title.innerText=language[lan].projects.p3Title;
+    p1Description.innerText=language[lan].projects.p3Description;
+    p2Description.innerText=language[lan].projects.p2Description;
+    p3Description.innerText=language[lan].projects.p3Description;
     //skills
     skillSecctionTitle.innerText = language[lan].skills.secctionTitle;
     //contact

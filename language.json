@@ -47,7 +47,15 @@
       "job2end": "Presente"
     },
     "projects": {
-      "secctionTitle": "Proyectos"
+      "secctionTitle": "Proyectos",
+      "moreBtn": "Ver más",
+      "p1Title": "Apicación Pokedex",
+      "p1Description": "Frontend app que hace consultas a una API llamada POKEAPI para mostrar, filtrar y ordear a tus pokemons favoritos, en una interfaz simple y amigable",
+      "p2Title": "Aplicación Rick y Morty",
+      "p2Description": "Frontend app que hace consultas a la API The Rick and Morty API para mostrar a los personajes de esta increible caricatura, esta interfaz te permite ordenar a los personajes según su dimensión, una app increible para los amantes de Rick y Morty",
+      "p3Title": "Autenticación de usuario (Backend)",
+      "p3Description": "Aplicación que permite mostrar el trabajo backend de una API que registra, logea y autentica usuarios a traves de herramientas como jsonwebtoken, bcrypt, nodemailer entre otras."
+      
     },
     "skills": {
       "secctionTitle": "Habilidades"
@@ -116,7 +124,14 @@
       "job2end": "Current"
     },
     "projects": {
-      "secctionTitle": "Projects"
+      "secctionTitle": "Projects",
+      "moreBtn": "See more",
+      "p1Title": "Pokedex App",
+      "p1Description": "Frontend app that fetch data from an API called POKEAPI in order to show, filter and order your favorites pokemons, using a simple and friendly interface.",
+      "p2Title": "Aplicación Rick y Morty",
+      "p2Description": "Frontend app that fetch data from The Rick and Morty API to show the characters from this incredible cartoon, this interface allows you to order characters by their dimension, this is an incredible App for Rick and Morty fans.",
+      "p3Title": "User Authentication (Backend)",
+      "p3Description": "App that allows to show the backend work of and API that registers, logs and verify users through tools such as jsonwebtoken, bcrypt, nodemailer among others."
     },
     "skills": {
       "secctionTitle": "Skills"
