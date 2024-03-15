@@ -45,15 +45,15 @@
         </a>
       </li> -->
       <li class="list-item">
-        <a href="#portfolio" class="list-link">
-          <i class='bx bxs-briefcase bx-md'></i>
-          <span id="lan-nav4">Proyectos</span>
-        </a>
-      </li>
-      <li class="list-item">
         <a href="#skills" class="list-link">
           <i class='bx bx-code-alt bx-md'></i>
           <span id="lan-nav5">Habilidades</span>
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="#portfolio" class="list-link">
+          <i class='bx bxs-briefcase bx-md'></i>
+          <span id="lan-nav4">Proyectos</span>
         </a>
       </li>
       <li class="list-item">
@@ -94,12 +94,12 @@
       </div>
       <dialog class="modal" id="modal">
         <div class="pdfs-container">
-          <div class="pdf-cv-ats-container">
-            <a href="assets/pdf/CV_ATS_Español_ErickPatiño.pdf" download="CV_ATS_Español_ErickPatiño.pdf"></a>
-          </div>
-          <div class="pdf-cv-container">
-            <a href="assets/pdf/CV_Español_ErickPatiño.pdf" download="CV_Español_ErickPatiño.pdf"></a>
-          </div>
+          <a id="anchor-cv-ats" href="assets/pdf/CV_ATS_Español_ErickPatiño.pdf" download="CV_ATS_ErickPatiño.pdf">
+            <div class="pdf-cv-ats-container"></div>
+          </a>
+          <a id="anchor-cv" href="assets/pdf/CV_Español_ErickPatiño.pdf" download="CV_ErickPatiño.pdf">
+            <div class="pdf-cv-container"></div>
+          </a>
         </div>
         <button class="button close-button primary-btn">Cerrar</button>
       </dialog>
@@ -267,23 +267,29 @@
       <div class="projects-container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
+
+
             <div class="swiper-slide">
-              <div class="project-card">
-                <div class="project-img-container project-1"></div>
-                <h2 class="project-title">Cotizador Web de PCB's</h2>
-                <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam
-                  beatae
-                  est optio facere, laudantium accusantium sit inventore incidunt</p>
+              <img src="./assets/img/pokedex-project.png" alt="">
+              <div class="project-info">
+                <h2 class="project-title">Pokedex app</h2>
+                <p class="project-description">Frontend app que hace consultas a una API llamada POKEAPI para mostrar, filtrar y ordear a tus pokemons favoritos, en una interfaz simple y amigable</p>
                 <button class="see-more-button primary-btn">Ver más</button>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="project-card">
-                <div class="project-img-container project-2"></div>
-                <h2 class="project-title">E-commerce figuras coleccionables</h2>
-                <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam
-                  beatae
-                  est optio facere, laudantium accusantium sit inventore incidunt</p>
+              <img src="./assets/img/rick-and-morty-project.png" alt="">
+              <div class="project-info">
+                <h2 class="project-title">Rick y Morty app</h2>
+                <p class="project-description">Frontend app que hace consultas a la API The Rick and Morty API para mostrar a los personajes de esta increible caricatura, esta interfaz te permite ordenar a los personajes según su dimensión, una app increible para los amantes de Rick y Morty</p>
+                <button class="see-more-button primary-btn">Ver más</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/users-authentication-app.png" alt="">
+              <div class="project-info">
+                <h2 class="project-title">Autenticación de usuario (Backend)</h2>
+                <p class="project-description">Aplicación que permite mostrar el trabajo backend de una API que registra, logea y autentica usuarios a traves de herramientas como jsonwebtoken, bcrypt, nodemailer entre otras.</p>
                 <button class="see-more-button primary-btn">Ver más</button>
               </div>
             </div>
@@ -293,35 +299,6 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <!-- <div class="project-card">
-          <div class="project-img-container project-1"></div>
-          <h2 class="project-title">Cotizador Web de PCB's</h2>
-          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
-            est optio facere, laudantium accusantium sit inventore incidunt</p>
-          <button class="see-more-button primary-btn">Ver más</button>
-        </div>
-        <div class="project-card">
-          <div class="project-img-container project-2"></div>
-          <h2 class="project-title">E-commerce figuras coleccionables</h2>
-          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
-            est optio facere, laudantium accusantium sit inventore incidunt</p>
-          <button class="see-more-button primary-btn">Ver más</button>
-        </div>
-        <div class="project-card">
-          <div class="project-img-container project-3"></div>
-          <h2 class="project-title">Dashboard para dispositivos IoT</h2>
-          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
-            est optio facere, laudantium accusantium sit inventore incidunt</p>
-          <button class="see-more-button primary-btn">Ver más</button>
-        </div>
-        <div class="project-card">
-          <div class="project-img-container project-4"></div>
-          <h2 class="project-title">Diseño, implementación y programación de sistema Wifi portatil para aplicaciones IoT
-          </h2>
-          <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ullam beatae
-            est optio facere, laudantium accusantium sit inventore incidunt</p>
-          <button class="see-more-button primary-btn">Ver más</button>
-        </div> -->
 
 
       </div>

@@ -12,6 +12,14 @@ const heroPhrase = document.getElementById('lan-hero-phrase');
 const heroProfession1 = document.getElementById('lan-hero-profession-1');
 const heroProfession2 = document.getElementById('lan-hero-profession-2');
 const downloadCvBtn = document.getElementById('download-cv-btn');
+
+const anchorCvAts = document.getElementById('anchor-cv-ats');
+const anchorCv = document.getElementById('anchor-cv');
+
+const pdfCvContainer = document.querySelector('.pdf-cv-container');
+const pdfCvAtsContainer = document.querySelector('.pdf-cv-ats-container');
+// console.log(pdfCvAtsContainer)
+
 //about-secction
 const aboutSecctionTitle = document.getElementById('lan-about-section-title');
 const aboutCardTitle1 = document.getElementById('lan-about-card-title1');
@@ -77,6 +85,12 @@ const setLanguage = (lan) => {
     heroProfession1.innerText = language[lan].hero.profession1;
     heroProfession2.innerText = language[lan].hero.profession2;
     downloadCvBtn.innerText = language[lan].hero.downloadBtn;
+
+    anchorCv.setAttribute("href",language[lan].hero.anchorCv);
+    anchorCvAts.setAttribute("href",language[lan].hero.anchorCvAts);
+
+    pdfCvContainer.style.backgroundImage = language[lan].hero.bgImgCv;
+    pdfCvAtsContainer.style.backgroundImage = language[lan].hero.bgImgCvAts;
 
     aboutSecctionTitle.innerText = language[lan].about.secctionTitle;
     aboutCardTitle1.innerText = language[lan].about.cardTitle1;

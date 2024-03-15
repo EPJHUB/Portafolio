@@ -13,7 +13,11 @@
       "phrase": "Hey!!! yo soy",
       "profession1": "Ingeniero en Mecatrónica",
       "profession2": "Desarrollador Fullstack",
-      "downloadBtn": "Descargar CV"
+      "downloadBtn": "Descargar CV",
+      "anchorCv": "assets/pdf/CV_Español_ErickPatiño.pdf",
+      "anchorCvAts": "assets/pdf/CV_ATS_Español_ErickPatiño.pdf",
+      "bgImgCv": "url(./assets/img/CV_Español_ErickPatiño.svg)",
+      "bgImgCvAts": "url(./assets/img/CV_ATS_Español_ErickPatiño.svg)"
     },
     "about": {
       "secctionTitle": "Sobre mí",
@@ -78,7 +82,11 @@
       "phrase": "Hey!!! I am",
       "profession1": "Mechatronics Engineer",
       "profession2": "Fullstack Web Developer",
-      "downloadBtn": "Download CV"
+      "downloadBtn": "Download CV",
+      "anchorCv": "assets/pdf/CV_Ingles_ErickPatiño.pdf",
+      "anchorCvAts": "assets/pdf/CV_ATS_Ingles_ErickPatiño.pdf",
+      "bgImgCv": "url(./assets/img/CV_Ingles_ErickPatiño.svg)",
+      "bgImgCvAts": "url(./assets/img/CV_ATS_Ingles_ErickPatiño.svg)"
     },
     "about": {
       "secctionTitle": "About me",
@@ -126,7 +134,7 @@
     "welcomeText": [
         { "text": "Hello world!!!", "len": 11 },
         { "text": "Hello developer", "len": 14 },
-        { "text": "Hello internaut", "len": 12 }
+        { "text": "Hello internaut", "len": 13 }
       ]
   }
 }

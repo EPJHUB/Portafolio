@@ -53,6 +53,7 @@ main {
   width: 100vw;
   /* background-color: hsl(212 100% 15% / 0.85); */
   background-color: var(--fondo-trans);
+  transition: background-color 0.5s ease;
   backdrop-filter: blur(5px);
   border-radius: 0 0 8px 8px;
   justify-content: space-between;
@@ -65,15 +66,17 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
+  margin: 0 15px;
+  transition: transform .5s ease-in-out;
 }
 
 .menu-icon {
   color: var(--fondo-aux);
+  transition: color 0.5s ease;
 }
 
 .menu-logo-container:hover {
-  scale: 1.2;
+  transform: scale(1.2)
 }
 
 .mobile-menu {
@@ -488,6 +491,7 @@ main {
   flex-direction: column;
   gap: 40px;
   background-color: var(--fondo-bg);
+  /* transition: background-color 0.5s ease; */
   max-width: 900px;
   margin: 0 auto;
 }
@@ -499,17 +503,13 @@ main {
   gap: 30px;
 }
 
-.project-card {
-  background-color: var(--fondo-cards);
-  box-shadow: 0 0 40px 2px rgba(29, 30, 32, 0.1);
-  border-radius: 3px 3px 30px 3px;
-  padding: 20px 20px;
-  margin: 0px 50px 50px 50px;
-  text-align: left;
+.project-info{
+  width: 90%;
+  margin: 0 auto;
 }
 
 .project-img-container {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -525,15 +525,15 @@ main {
 }
 
 .project-1 {
-  background-image: url(./assets/img/project1.jpg);
+  background-image: url(./assets/img/pokedex-project.png);
 }
 
 .project-2 {
-  background-image: url(./assets/img/project2.jpg);
+  background-image: url(./assets/img/rick-and-morty-project.png);
 }
 
 .project-3 {
-  background-image: url(./assets/img/project3.png);
+  background-image: url(./assets/img/users-authentication-app.png);
 }
 
 .project-4 {
@@ -591,6 +591,11 @@ main {
   gap: 8px;
   box-shadow: 0 0 40px 2px rgba(29, 30, 32, 0.1);
   background: rgba(119, 157, 172, 0.5);
+  transition: transform .5s ease-in-out;
+}
+
+.skill-container:hover{
+  transform: scale(1.2)
 }
 
 .skill-container > span {
@@ -815,7 +820,8 @@ footer > small {
 }
 
 .card {
-  background: var(--fondo-cards);
+  background-color: var(--fondo-cards);
+  transition: background-color 0.5s ease;
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
@@ -840,13 +846,18 @@ footer > small {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
 }
 
+  .pdfs-container > a {
+    width: 45%;
+    height: 100%;
+  }
+
 .pdf-cv-ats-container {
-  width: 45%;
+  /* width: 45%; */
   height: 100%;
   background-image: url(./assets/img/CV_ATS_Español_ErickPatiño.svg);
   background-position: center;
@@ -855,7 +866,7 @@ footer > small {
 }
 
 .pdf-cv-container {
-  width: 45%;
+  /* width: 45%; */
   height: 100%;
   background-image: url(./assets/img/CV_Español_ErickPatiño.svg);
   background-position: center;
@@ -875,6 +886,10 @@ footer > small {
 }
 
 @media (min-width: 760px) {
+  .logo{
+    margin-left: 40px;
+  }
+
   .menu-icon {
     display: none;
   }
@@ -900,6 +915,7 @@ footer > small {
     height: auto;
     border-radius: 0;
     box-shadow: none;
+    margin-left: 20px;
   }
 
   .list-item a i {
@@ -979,19 +995,30 @@ footer > small {
 }
 
 .swiper-slide {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
-  background: var(--fondo-bg);
+  background-color: var(--fondo-bg);
+  /* background-color: var(--fondo-cards); */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  background-color: var(--fondo-cards);
+  transition: background-color 0.5s ease; 
+  box-shadow: 0 0 40px 2px rgba(29, 30, 32, 0.1);
+  border-radius: 5px 5px 30px 5px;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 15px;
+  max-height: 35vh;
 }
 
 .swiper {
