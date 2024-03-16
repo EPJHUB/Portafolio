@@ -508,6 +508,22 @@ main {
   margin: 0 auto;
 }
 
+.project-links-container {
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project-links-container > a > figure {
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+}
+
 .project-img-container {
   height: 40vh;
   width: 100%;
@@ -541,8 +557,10 @@ main {
 }
 
 .see-more-button.primary-btn {
-  margin-top: 20px;
+  text-decoration: none;
+  /* margin-top: 20px; */
   border: 2px var(--state-gray) solid;
+  padding: 10px 20px;
 }
 
 /* modal */
@@ -832,10 +850,13 @@ footer > small {
   border: 2px white solid;
   color: white;
   background-color: var(--oxford-blue);
-  height: 40px;
-  border-radius: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* height: 40px; */
+  border-radius: 9999px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
 }
 
 .hide {
@@ -982,6 +1003,7 @@ footer > small {
   }
 
   .download-btn {
+    height: 40px;
     width: 200px;
     grid-area: btn;
     justify-self: center;
