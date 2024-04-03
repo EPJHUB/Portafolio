@@ -1,16 +1,18 @@
 import { setLanguage, setWelcomeText } from "./languageHandler.js";
 const currentLanguage = localStorage.getItem("epj-portfolio-lan");
+let welcomeTextArray;
 if (!currentLanguage) {
   setLanguage("es");
+  welcomeTextArray = setWelcomeText("es");
 } else {
   setLanguage(currentLanguage);
+  welcomeTextArray = setWelcomeText(currentLanguage);
 }
 // const welcomeTextArray = [
 //   { text: "Hola mundo!!!", len: 12 },
 //   { text: "Hola desarrollador", len: 16 },
 //   { text: "Hola internauta", len: 13 },
 // ];
-let welcomeTextArray = setWelcomeText(currentLanguage);
 const r = document.querySelector(":root");
 let i = 0;
 let inicio = false;

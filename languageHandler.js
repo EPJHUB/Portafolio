@@ -1,4 +1,4 @@
-import language from "./language.json" assert {type: 'json'}
+import language from "./language.json" with {type: 'json'}
 //navbar
 const nav1 = document.getElementById('lan-nav1');
 const nav2 = document.getElementById('lan-nav2');
