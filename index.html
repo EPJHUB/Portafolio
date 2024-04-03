@@ -12,8 +12,16 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-
   <script type="module" src="main.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "duh-MH3GpUEiKkzrg",
+      });
+    })();
+  </script>
 </head>
 
 <body>
@@ -275,12 +283,13 @@
                 <h2 id="p1-title" class="project-title">Pokedex app</h2>
                 <p id="p1-description" class="project-description">Frontend app que hace consultas a una API llamada
                   POKEAPI para mostrar, filtrar y ordear a tus pokemons favoritos, en una interfaz simple y amigable</p>
-                  <div class="project-links-container">
-                    <a class="see-more-button primary-btn" href="https://pokedex-orcin-kappa.vercel.app/" target="_blank">Ver más</a>
-                    <a href="https://github.com/EPJHUB/pokedex" target="_blank">
-                      <figure class="git-hub-icon"></figure>
-                    </a>
-                  </div>
+                <div class="project-links-container">
+                  <a class="see-more-button primary-btn" href="https://pokedex-orcin-kappa.vercel.app/"
+                    target="_blank">Ver más</a>
+                  <a href="https://github.com/EPJHUB/pokedex" target="_blank">
+                    <figure class="git-hub-icon"></figure>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="swiper-slide">
@@ -291,7 +300,8 @@
                   Morty API para mostrar a los personajes de esta increible caricatura, esta interfaz te permite ordenar
                   a los personajes según su dimensión, una app increible para los amantes de Rick y Morty</p>
                 <div class="project-links-container">
-                  <a class="see-more-button primary-btn" href="https://rick-and-morty-five-cyan.vercel.app/" target="_blank">Ver más</a>
+                  <a class="see-more-button primary-btn" href="https://rick-and-morty-five-cyan.vercel.app/"
+                    target="_blank">Ver más</a>
                   <a href="https://github.com/EPJHUB/rick-and-morty" target="_blank">
                     <figure class="git-hub-icon"></figure>
                   </a>
@@ -299,18 +309,19 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/users-authentication-app.png" alt="">
+              <img src="./assets/img/ecommerce-project.png" alt="">
               <div class="project-info">
-                <h2 id="p3-title" class="project-title">Autenticación de usuario (Backend)</h2>
+                <h2 id="p3-title" class="project-title">Comercio electrónico</h2>
                 <p id="p3-description" class="project-description">Aplicación que permite mostrar el trabajo backend de
-                  una API que registra, logea y autentica usuarios a traves de herramientas como jsonwebtoken, bcrypt,
-                  nodemailer entre otras.</p>
-                  <div class="project-links-container">
-                    <a class="see-more-button primary-btn" href="https://github.com/EPJHUB/rick-and-morty" target="_blank">Ver más</a>
-                    <a href="https://github.com/EPJHUB/user_authentication_app_backend" target="_blank">
-                      <figure class="git-hub-icon"></figure>
-                    </a>
-                  </div>
+                  un comercio electrónico, logea y autentica usuarios a traves de herramientas como jsonwebtoken,
+                  bcrypt, entre otras para el manejo de recursos.</p>
+                <div class="project-links-container">
+                  <a class="see-more-button primary-btn" href="https://ecommerce-front-end-lilac.vercel.app"
+                    target="_blank">Ver más</a>
+                  <a href="https://github.com/EPJHUB/academlo-node-final-project" target="_blank">
+                    <figure class="git-hub-icon"></figure>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -330,11 +341,11 @@
         <form autocomplete="off" id="form" class="contact-form">
           <div class="label-input">
             <label for="name"><i class='bx bxs-user bx-sm'></i></label>
-            <input autocomplete="false" type="text" id="name" placeholder="Nombre" name="name">
+            <input autocomplete="false" type="text" id="from_name" placeholder="Nombre" name="name">
           </div>
           <div class="label-input">
             <label for="email"><i class='bx bx-at bx-sm'></i></label>
-            <input autocomplete="false" type="email" id="email" placeholder="Correo" name="email" autocomplete=>
+            <input autocomplete="false" type="email" id="from_email" placeholder="Correo" name="email" autocomplete=>
           </div>
           <div>
             <label id="message-label" for="message" class="msg-label">Mensaje</label> <br>

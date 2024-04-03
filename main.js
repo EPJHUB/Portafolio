@@ -1,9 +1,8 @@
 import { setLanguage, setWelcomeText } from "./languageHandler.js";
 const currentLanguage = localStorage.getItem("epj-portfolio-lan");
-if (!currentLanguage){
+if (!currentLanguage) {
   setLanguage("es");
-}
-else{
+} else {
   setLanguage(currentLanguage);
 }
 // const welcomeTextArray = [
@@ -11,7 +10,7 @@ else{
 //   { text: "Hola desarrollador", len: 16 },
 //   { text: "Hola internauta", len: 13 },
 // ];
-let welcomeTextArray = setWelcomeText(currentLanguage)
+let welcomeTextArray = setWelcomeText(currentLanguage);
 const r = document.querySelector(":root");
 let i = 0;
 let inicio = false;
@@ -193,7 +192,6 @@ SR.reveal(".contact-form", {
   // reset: true,
 });
 
-
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -201,10 +199,32 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  let params = {
+    from_name: document.getElementById("from_name").value,
+    from_email: document.getElementById("from_email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceId = "service_453jl0h";
+  const templateId = "template_krv9wmv";
+
+  emailjs
+    .send(serviceId, templateId, params)
+    .then((res) => {
+      document.getElementById("from_name").value = "";
+      document.getElementById("from_email").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("Message send successfully");
+    })
+    .catch((err) => console.log(err));
 });

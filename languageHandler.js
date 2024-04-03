@@ -61,8 +61,8 @@ const p3Description = document.getElementById('p3-description');
 const skillSecctionTitle = document.getElementById('lan-skill-section-title');
 //contact
 const contactSecctionTitle = document.getElementById('lan-contact-section-title');
-const contactName = document.getElementById('name');
-const contactEmail = document.getElementById('email');
+const contactName = document.getElementById('from_name');
+const contactEmail = document.getElementById('from_email');
 const contactMessage = document.getElementById('message-label');
 const contactSubmitBtn = document.getElementById('contact-submit-btn');
 //footer

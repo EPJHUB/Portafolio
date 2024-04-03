@@ -770,7 +770,8 @@ input[type="email"]
 }
 
 .contact-btn {
-  text-transform: uppercase;
+  padding: 10px 30px;
+  /* text-transform: uppercase; */
   align-self: flex-start;
 }
 
