@@ -12,6 +12,8 @@ const heroPhrase = document.getElementById('lan-hero-phrase');
 const heroProfession1 = document.getElementById('lan-hero-profession-1');
 const heroProfession2 = document.getElementById('lan-hero-profession-2');
 const downloadCvBtn = document.getElementById('download-cv-btn');
+const atsLinkText = document.getElementById('ats-text-lan');
+const friendlyLinkText = document.getElementById('friendly-text-lan')
 
 const anchorCvAts = document.getElementById('anchor-cv-ats');
 const anchorCv = document.getElementById('anchor-cv');
@@ -94,6 +96,10 @@ const setLanguage = (lan) => {
     heroProfession1.innerText = language[lan].hero.profession1;
     heroProfession2.innerText = language[lan].hero.profession2;
     downloadCvBtn.innerText = language[lan].hero.downloadBtn;
+    friendlyLinkText.innerText = language[lan].hero.friendlyLinkText;
+    atsLinkText.innerText = language[lan].hero.atsLinkText;
+
+    
 
     anchorCv.setAttribute("href",language[lan].hero.anchorCv);
     anchorCvAts.setAttribute("href",language[lan].hero.anchorCvAts);

@@ -14,10 +14,13 @@
       "profession1": "Ingeniero en Mecatrónica",
       "profession2": "Desarrollador Fullstack",
       "downloadBtn": "Descargar CV",
+      "friendlyLinkText":"Formato amigable con reclutador",
+      "atsLinkText": "Formato ATS",
       "anchorCv": "assets/pdf/CV_Español_ErickPatiño.pdf",
       "anchorCvAts": "assets/pdf/CV_ATS_Español_ErickPatiño.pdf",
       "bgImgCv": "url(./assets/img/CV_Español_ErickPatiño.svg)",
       "bgImgCvAts": "url(./assets/img/CV_ATS_Español_ErickPatiño.svg)"
+
     },
     "about": {
       "secctionTitle": "Sobre mí",
@@ -91,6 +94,8 @@
       "profession1": "Mechatronics Engineer",
       "profession2": "Fullstack Web Developer",
       "downloadBtn": "Download CV",
+      "friendlyLinkText":"Recruiter friendly format",
+      "atsLinkText": "ATS format",
       "anchorCv": "assets/pdf/CV_Ingles_ErickPatiño.pdf",
       "anchorCvAts": "assets/pdf/CV_ATS_Ingles_ErickPatiño.pdf",
       "bgImgCv": "url(./assets/img/CV_Ingles_ErickPatiño.svg)",
